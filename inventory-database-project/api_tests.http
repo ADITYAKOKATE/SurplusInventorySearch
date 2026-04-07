@@ -1,0 +1,50 @@
+### Inventory Database API Tests (Port 4000)
+
+@baseUrl = http://localhost:4000
+
+### 1. Health Check
+GET {{baseUrl}}/
+Accept: application/json
+
+###
+
+### 2. Create a New Supplier
+POST {{baseUrl}}/supplier
+Content-Type: application/json
+
+{
+  "name": "Global Electronics",
+  "contact": "sales@globalelectronics.com"
+}
+
+###
+
+### 3. List All Suppliers
+GET {{baseUrl}}/suppliers
+Accept: application/json
+
+###
+
+### 4. Add an Inventory Item
+POST {{baseUrl}}/inventory
+Content-Type: application/json
+
+{
+  "productName": "High-Speed Processor",
+  "category": "Electronics",
+  "price": 299.99,
+  "stock": 50,
+  "supplierName": "Global Electronics"
+}
+
+###
+
+### 5. List All Inventory Items
+GET {{baseUrl}}/inventory
+Accept: application/json
+
+###
+
+### 6. Get Inventory Grouped by Supplier
+GET {{baseUrl}}/inventory/grouped
+Accept: application/json

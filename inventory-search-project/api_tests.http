@@ -1,0 +1,31 @@
+### Inventory Search API Tests (Port 3000)
+
+@baseUrl = http://localhost:3000
+
+### 1. Simple Search
+GET {{baseUrl}}/search?q=intel
+Accept: application/json
+
+###
+
+### 2. Search with Category
+GET {{baseUrl}}/search?category=Electronics
+Accept: application/json
+
+###
+
+### 3. Search with Price Range
+GET {{baseUrl}}/search?minPrice=100&maxPrice=500
+Accept: application/json
+
+###
+
+### 4. Search with Multiple Filters
+GET {{baseUrl}}/search?q=hp&category=Electronics&minPrice=100&maxPrice=800
+Accept: application/json
+
+###
+
+### 5. Health Check
+GET {{baseUrl}}/
+Accept: application/json
