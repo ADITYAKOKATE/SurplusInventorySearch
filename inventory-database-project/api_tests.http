@@ -14,7 +14,7 @@ Content-Type: application/json
 
 {
   "name": "Global Electronics",
-  "contact": "sales@globalelectronics.com"
+  "city": "New York"
 }
 
 ###
@@ -30,11 +30,10 @@ POST {{baseUrl}}/inventory
 Content-Type: application/json
 
 {
-  "productName": "High-Speed Processor",
-  "category": "Electronics",
+  "product_name": "High-Speed Processor",
   "price": 299.99,
-  "stock": 50,
-  "supplierName": "Global Electronics"
+  "quantity": 50,
+  "supplier_id": 1
 }
 
 ###
