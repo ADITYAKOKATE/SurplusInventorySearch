@@ -30,8 +30,8 @@ POST {{baseUrl}}/inventory
 Content-Type: application/json
 
 {
-  "product_name": "High-Speed Processor",
-  "price": 299.99,
+  "product_name": "Low-Speed Processor",
+  "price": 199.99,
   "quantity": 50,
   "supplier_id": 1
 }

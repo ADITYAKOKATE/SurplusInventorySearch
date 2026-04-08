@@ -4,15 +4,15 @@ A surplus product search system that lets buyers quickly filter inventory from m
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-![Search results — Electronics category filtered](../../../../../../../Users/Aditya/.gemini/antigravity/brain/8440fa72-edfa-4ddf-89a6-d327f908ad2f/part_a_search_results_1775581035867.png)
+![Search Results](./images/Screenshot%202026-04-08%20153752.png)
 
-*Filtering by category "Electronics" with a price range*
+*Filtering by category and price range with a premium glassmorphism UI*
 
-![No results state](../../../../../../../Users/Aditya/.gemini/antigravity/brain/8440fa72-edfa-4ddf-89a6-d327f908ad2f/part_a_no_results_1775581082579.png)
+![Search UI State](./images/Screenshot%202026-04-08%20153810.png)
 
-*"No results found" state when search returns an empty array*
+*The search system in action, demonstrating real-time results and category filtering*
 
 ---
 

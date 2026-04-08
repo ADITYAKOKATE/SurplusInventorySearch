@@ -4,15 +4,15 @@ A database-backed inventory management REST API built with Node.js, Express, and
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-![Inventory grouped by supplier — API response](../../../../../../../Users/Aditya/.gemini/antigravity/brain/8440fa72-edfa-4ddf-89a6-d327f908ad2f/part_b_api_grouped_1775581052020.png)
+![Inventory grouped by supplier — API response](./images/Screenshot%202026-04-08%20153934.png)
 
-*`GET /inventory/grouped` — suppliers ranked by total inventory value (quantity × price)*
+*`GET /inventory/grouped` — Suppliers ranked by total inventory value*
 
-![Creating an inventory item in Postman](../../../../../../../Users/Aditya/.gemini/antigravity/brain/8440fa72-edfa-4ddf-89a6-d327f908ad2f/part_b_postman_post_1775581098916.png)
+![Creating an inventory item](./images/Screenshot%202026-04-08%20153948.png)
 
-*`POST /inventory` — creating a new item with validation*
+*`POST /inventory` — Creating a new item with validation*
 
 ---
 
