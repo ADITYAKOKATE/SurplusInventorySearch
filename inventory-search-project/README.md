@@ -1,4 +1,4 @@
-# 📦 InventoryFind — Inventory Search API + UI
+# InventoryFind — Inventory Search API + UI
 
 A surplus product search system that lets buyers quickly filter inventory from multiple suppliers by name, category, and price range. Built with Node.js + Express on the backend and plain HTML/CSS/JavaScript on the frontend.
 
