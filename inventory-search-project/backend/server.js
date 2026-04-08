@@ -1,12 +1,22 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Enable CORS for all origins (useful for testing, Render handles same-origin in production)
+app.use(cors());
+
 // Serve frontend static files from ../frontend/dist (Vite build output)
-app.use(express.static(path.join(__dirname, '..', 'frontend', 'dist')));
+const distPath = path.join(__dirname, '..', 'frontend', 'dist');
+app.use(express.static(distPath));
+
+// Also serve index.html for all non-API routes to handle potential SPA client-side routing
+app.get(/^(?!\/search|\/health).+$/, (req, res) => {
+  res.sendFile(path.join(distPath, 'index.html'));
+});
 
 // Load inventory data once at startup
 const inventoryData = JSON.parse(

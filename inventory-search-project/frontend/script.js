@@ -3,7 +3,7 @@
    Base URL is empty (same-origin), so no CORS issues.
 ─────────────────────────────────────────────────────────────────────────────── */
 
-const API_BASE = '';   // Same-origin: Express serves both frontend and /search
+const API_BASE = import.meta.env.VITE_API_URL || '';   // Base URL of the backend API (set VITE_API_URL in Vercel)
 
 // ─── DOM references ────────────────────────────────────────────────────────────
 const searchInput       = document.getElementById('search-input');
